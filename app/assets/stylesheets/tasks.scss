@@ -125,7 +125,10 @@ label[for='toggle-all'] {
   width: 60px;
   height: 34px;
   text-align: center;
-  border: none; /* Mobile Safari */
+}
+
+input[type="checkbox"] {
+  border-radius: 25px;
 }
 
 .toggle-all:before {
