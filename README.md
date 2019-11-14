@@ -5,6 +5,7 @@ This README document steps are necessary to get the application up and running.
 ## Wireframes
 
 Home page
+
 ![Screenshot](/app/assets/images/home_page.png)
 ____________________________________________________________________________________________________________________________
 
