@@ -1,24 +1,57 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README document steps are necessary to get the application up and running.
 
-Things you may want to cover:
+## Wireframes
 
-* Ruby version
+Home page
+![Screenshot](/app/assets/images/home_page.png)
+____________________________________________________________________________________________________________________________
 
-* System dependencies
+## Precondition 
+* Ruby version 2.5.3 installed
+* Ruby on Rails version 5.2.3 installed
 
-* Configuration
+## Configuration
+To get started with the app, clone the repo and then install the needed gems:
+````
+bundle install --without production
+````
 
-* Database creation
+## Database creation and initialization
+Next, migrate the database:
+````
+rails db:migrate
+````
 
-* Database initialization
+## Services (job queues, cache servers, search engines, etc.)
+Run the app in a local server:
+````
+rails server
+````
 
-* How to run the test suite
+## Deployment instructions
+Following instructions for Heroku:
 
-* Services (job queues, cache servers, search engines, etc.)
+* Login to your Heroku account
+````
+heroku login
+````
+* Create Heroku app
+````
+heroku create your_app_name
+````
+* Deploy an application
+````
+git push heroku master
+````
+* Initialize database
+````
+heroku run rails db:migrate
+heroku restart
+````
+* The application should be up and running
 
-* Deployment instructions
 
-* ...
+
+
